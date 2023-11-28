@@ -1,26 +1,36 @@
 class MinMax{
 
-    public static Integer findMax(Integer a, Integer b, Integer c){
-        if((a.compareTo(b)>0) && (a.compareTo(c)>0)){
-            return a;
-        }else if((b.compareTo(a)>0) && (b.compareTo(c)>0)){
-            return b;
-        }else{
-            return c;
-        }
-    }
+//    public static Integer findMax(Integer a, Integer b, Integer c){
+//        if((a.compareTo(b)>0) && (a.compareTo(c)>0)){
+//            return a;
+//        }else if((b.compareTo(a)>0) && (b.compareTo(c)>0)){
+//            return b;
+//        }else{
+//            return c;
+//        }
+//    }
+//
+//    public static Double findMax(Double a, Double b, Double c){
+//        if((a.compareTo(b)>0) && (a.compareTo(c)>0)){
+//            return a;
+//        }else if((b.compareTo(a)>0) && (b.compareTo(c)>0)){
+//            return b;
+//        }else{
+//            return c;
+//        }
+//    }
+//
+//    public static String findMax(String a, String b, String c){
+//        if((a.compareTo(b)>0) && (a.compareTo(c)>0)){
+//            return a;
+//        }else if((b.compareTo(a)>0) && (b.compareTo(c)>0)){
+//            return b;
+//        }else{
+//            return c;
+//        }
+//    }
 
-    public static Double findMax(Double a, Double b, Double c){
-        if((a.compareTo(b)>0) && (a.compareTo(c)>0)){
-            return a;
-        }else if((b.compareTo(a)>0) && (b.compareTo(c)>0)){
-            return b;
-        }else{
-            return c;
-        }
-    }
-
-    public static String findMax(String a, String b, String c){
+    public static<T extends Comparable<T>> T findMax(T a, T b, T c){
         if((a.compareTo(b)>0) && (a.compareTo(c)>0)){
             return a;
         }else if((b.compareTo(a)>0) && (b.compareTo(c)>0)){
